@@ -4,15 +4,20 @@
 			<u-swiper :list="list"></u-swiper>
 		</view>
 		<view class="center" @click="goSearch">
-			<u-search :disabled="true" height="90" bg-color="#FFF" :show-action="false" placeholder="请输入检索关键字" v-model="keyword"></u-search>
+			<u-search :disabled="true" height="70" bg-color="#FFF" :show-action="false" placeholder="请输入检索关键字" v-model="keyword"></u-search>
 		</view>
 		<view class="content">
-			<u-grid :col="3">
-				<u-grid-item bg-color="#F2F2F2" v-for="val in gridList" class="gridItem">
-					<u-icon :name="val.class" :size="60" :color="val.color"></u-icon>
-					<view class="grid-text">{{val.text}}</view>
-				</u-grid-item>
-			</u-grid>
+			<uni-grid :column="3" @change="gridIndex">
+				<uni-grid-item v-for="val in gridList" :key="val.id" :index="val.id">
+					<view class="gridItem">
+						<u-icon :name="val.class" :size="60" :color="val.color"></u-icon>
+						<text class="text">{{val.text}}</text>
+					</view>
+				</uni-grid-item>
+			</uni-grid>
+		</view>
+		<view class="footer">
+			<span>技术支持：天津读者之星有限公司</span>
 		</view>
 	</view>
 </template>
@@ -21,7 +26,6 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello',
 				list: [{
 						image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
 						title: '昨夜星辰昨夜风，画楼西畔桂堂东'
@@ -38,47 +42,69 @@
 				keyword: '',
 				gridList: [
 					{
+						id: 1,
 						class: 'photo',
 						color: 'red',
-						text:'图片'
+						text:'读者证绑定'
 					},
 					{
+						id: 2,
 						class: 'photo',
 						color: 'blue',
-						text:'图片'
+						text:'个人资料'
 					},
 					{
+						id: 3,
 						class: 'photo',
 						color: 'pink',
-						text:'图片'
+						text:'书目检索'
 					},
 					{
+						id: 4,
 						class: 'photo',
 						color: 'black',
-						text:'图片'
+						text:'借阅记录'
 					},
 					{
+						id: 5,
 						class: 'photo',
 						color: 'grey',
-						text:'图片'
+						text:'图书续借'
 					},
 					{
+						id: 6,
 						class: 'photo',
 						color: 'red',
-						text:'图片'
+						text:'电子书'
 					},
 					{
+						id: 7,
 						class: 'photo',
 						color: 'blue',
-						text:'图片'
-					}]
+						text:'读者活动'
+					},
+					{
+						id: 8,
+						class: 'photo',
+						color: 'blue',
+						text:'国图移动阅读'
+					}
+					]
 			}
 		},
 		onLoad() {
 		},
 		methods: {
 			goSearch () {
+				// 使用router
 				this.$router.push({name: 'books/search'})
+			},
+			gridIndex (val) {
+				console.log(val.detail.index)
+				// 使用uni.navigateTo
+				uni.navigateTo({
+					url: `pages/index/search`
+				})
 			}
 		}
 	}
@@ -94,10 +120,8 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #F0F0F0;
-		.top{
-		}
 		.center{
-			padding: 30px;
+			padding: 25px;
 			/deep/.u-content{
 				box-shadow: #888888 0px 0px 6px;
 			}
@@ -108,6 +132,21 @@
 			}
 		}
 		.content{
+			padding-bottom: 4rpx;
+			.gridItem{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		/deep/.uni-grid-item__box{
+			justify-content: center;
+		}
+		.footer{
+			text-align: center;
+			font-size: 12px;
+			color: #C9C6C4;
 		}
 	}
 </style>

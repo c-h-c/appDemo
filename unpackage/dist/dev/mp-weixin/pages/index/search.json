@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "xfl-select": "/components/xfl-select/xfl-select",
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search"
+  }
+}

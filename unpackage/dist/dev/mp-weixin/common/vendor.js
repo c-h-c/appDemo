@@ -8,7 +8,58 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createPlugin = createPlugin;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createPlugin = createPlugin;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _uniI18n = __webpack_require__(/*! @dcloudio/uni-i18n */ 4);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+
+function b64DecodeUnicode(str) {
+  return decodeURIComponent(atob(str).split('').map(function (c) {
+    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+}
+
+function getCurrentUserInfo() {
+  var token = wx.getStorageSync('uni_id_token') || '';
+  var tokenArr = token.split('.');
+  if (!token || tokenArr.length !== 3) {
+    return {
+      uid: null,
+      role: [],
+      permission: [],
+      tokenExpired: 0 };
+
+  }
+  var userInfo;
+  try {
+    userInfo = JSON.parse(b64DecodeUnicode(tokenArr[1]));
+  } catch (error) {
+    throw new Error('获取当前用户信息出错，详细错误信息为：' + error.message);
+  }
+  userInfo.tokenExpired = userInfo.exp * 1000;
+  delete userInfo.exp;
+  delete userInfo.iat;
+  return userInfo;
+}
+
+function uniIdMixin(Vue) {
+  Vue.prototype.uniIDHasRole = function (roleId) {var _getCurrentUserInfo =
+
+
+    getCurrentUserInfo(),role = _getCurrentUserInfo.role;
+    return role.indexOf(roleId) > -1;
+  };
+  Vue.prototype.uniIDHasPermission = function (permissionId) {var _getCurrentUserInfo2 =
+
+
+    getCurrentUserInfo(),permission = _getCurrentUserInfo2.permission;
+    return this.uniIDHasRole('admin') || permission.indexOf(permissionId) > -1;
+  };
+  Vue.prototype.uniIDTokenValid = function () {var _getCurrentUserInfo3 =
+
+
+    getCurrentUserInfo(),tokenExpired = _getCurrentUserInfo3.tokenExpired;
+    return tokenExpired > Date.now();
+  };
+}
 
 var _toString = Object.prototype.toString;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -232,16 +283,20 @@ var promiseInterceptor = {
     if (!isPromise(res)) {
       return res;
     }
-    return res.then(function (res) {
-      return res[1];
-    }).catch(function (res) {
-      return res[0];
+    return new Promise(function (resolve, reject) {
+      res.then(function (res) {
+        if (res[0]) {
+          reject(res[0]);
+        } else {
+          resolve(res[1]);
+        }
+      });
     });
   } };
 
 
 var SYNC_API_RE =
-/^\$|Window$|WindowStyle$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
+/^\$|Window$|WindowStyle$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64|getLocale|setLocale/;
 
 var CONTEXT_API_RE = /^create|Manager$/;
 
@@ -354,6 +409,40 @@ function upx2px(number, newDeviceWidth) {
   return number < 0 ? -result : result;
 }
 
+function getLocale() {
+  // 优先使用 $locale
+  var app = getApp({
+    allowDefault: true });
+
+  if (app && app.$vm) {
+    return app.$vm.$locale;
+  }
+  return wx.getSystemInfoSync().language || 'zh-Hans';
+}
+
+function setLocale(locale) {
+  var app = getApp();
+  if (!app) {
+    return false;
+  }
+  var oldLocale = app.$vm.$locale;
+  if (oldLocale !== locale) {
+    app.$vm.$locale = locale;
+    onLocaleChangeCallbacks.forEach(function (fn) {return fn({
+        locale: locale });});
+
+    return true;
+  }
+  return false;
+}
+
+var onLocaleChangeCallbacks = [];
+function onLocaleChange(fn) {
+  if (onLocaleChangeCallbacks.indexOf(fn) === -1) {
+    onLocaleChangeCallbacks.push(fn);
+  }
+}
+
 var interceptors = {
   promiseInterceptor: promiseInterceptor };
 
@@ -361,6 +450,9 @@ var interceptors = {
 var baseApi = /*#__PURE__*/Object.freeze({
   __proto__: null,
   upx2px: upx2px,
+  getLocale: getLocale,
+  setLocale: setLocale,
+  onLocaleChange: onLocaleChange,
   addInterceptor: addInterceptor,
   removeInterceptor: removeInterceptor,
   interceptors: interceptors });
@@ -691,7 +783,7 @@ function initTriggerEvent(mpInstance) {
   };
 }
 
-function initHook(name, options) {
+function initHook(name, options, isComponent) {
   var oldHook = options[name];
   if (!oldHook) {
     options[name] = function () {
@@ -822,7 +914,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -928,6 +1020,11 @@ function initProperties(props) {var isBehavior = arguments.length > 1 && argumen
     properties.generic = {
       type: Object,
       value: null };
+
+    // scopedSlotsCompiler auto
+    properties.scopedSlotsCompiler = {
+      type: String,
+      value: '' };
 
     properties.vueSlots = { // 小程序不能直接定义 $slots 的 props，所以通过 vueSlots 转换到 $slots
       type: null,
@@ -1256,6 +1353,54 @@ function handleEvent(event) {var _this = this;
   }
 }
 
+var locale;
+
+{
+  locale = wx.getSystemInfoSync().language;
+}
+
+var i18n = (0, _uniI18n.initVueI18n)(
+locale,
+{});
+
+var t = i18n.t;
+var i18nMixin = i18n.mixin = {
+  beforeCreate: function beforeCreate() {var _this2 = this;
+    var unwatch = i18n.i18n.watchLocale(function () {
+      _this2.$forceUpdate();
+    });
+    this.$once('hook:beforeDestroy', function () {
+      unwatch();
+    });
+  },
+  methods: {
+    $$t: function $$t(key, values) {
+      return t(key, values);
+    } } };
+
+
+var setLocale$1 = i18n.setLocale;
+var getLocale$1 = i18n.getLocale;
+
+function initAppLocale(Vue, appVm, locale) {
+  var state = Vue.observable({
+    locale: locale || i18n.getLocale() });
+
+  var localeWatchers = [];
+  appVm.$watchLocale = function (fn) {
+    localeWatchers.push(fn);
+  };
+  Object.defineProperty(appVm, '$locale', {
+    get: function get() {
+      return state.locale;
+    },
+    set: function set(v) {
+      state.locale = v;
+      localeWatchers.forEach(function (watch) {return watch(v);});
+    } });
+
+}
+
 var eventChannels = {};
 
 var eventChannelStack = [];
@@ -1324,11 +1469,14 @@ function initScopedSlotsParams() {
   };
 
   _vue.default.prototype.$setScopedSlotsParams = function (name, value) {
-    var vueId = this.$options.propsData.vueId;
-    var object = center[vueId] = center[vueId] || {};
-    object[name] = value;
-    if (parents[vueId]) {
-      parents[vueId].$forceUpdate();
+    var vueIds = this.$options.propsData.vueId;
+    if (vueIds) {
+      var vueId = vueIds.split(',')[0];
+      var object = center[vueId] = center[vueId] || {};
+      object[name] = value;
+      if (parents[vueId]) {
+        parents[vueId].$forceUpdate();
+      }
     }
   };
 
@@ -1355,6 +1503,7 @@ function parseBaseApp(vm, _ref3)
   if (vm.$options.store) {
     _vue.default.prototype.$store = vm.$options.store;
   }
+  uniIdMixin(_vue.default);
 
   _vue.default.prototype.mpHost = "mp-weixin";
 
@@ -1425,6 +1574,8 @@ function parseBaseApp(vm, _ref3)
       appOptions[name] = methods[name];
     });
   }
+
+  initAppLocale(_vue.default, vm, wx.getSystemInfoSync().language || 'zh-Hans');
 
   initHooks(appOptions, hooks);
 
@@ -1733,6 +1884,7 @@ function createSubpackageApp(vm) {
   var app = getApp({
     allowDefault: true });
 
+  vm.$scope = app;
   var globalData = app.globalData;
   if (globalData) {
     Object.keys(appOptions.globalData).forEach(function (name) {
@@ -1748,17 +1900,17 @@ function createSubpackageApp(vm) {
   });
   if (isFn(appOptions.onShow) && wx.onAppShow) {
     wx.onAppShow(function () {for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {args[_key5] = arguments[_key5];}
-      appOptions.onShow.apply(app, args);
+      vm.__call_hook('onShow', args);
     });
   }
   if (isFn(appOptions.onHide) && wx.onAppHide) {
     wx.onAppHide(function () {for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {args[_key6] = arguments[_key6];}
-      appOptions.onHide.apply(app, args);
+      vm.__call_hook('onHide', args);
     });
   }
   if (isFn(appOptions.onLaunch)) {
     var args = wx.getLaunchOptionsSync && wx.getLaunchOptionsSync();
-    appOptions.onLaunch.call(app, args);
+    vm.__call_hook('onLaunch', args);
   }
   return vm;
 }
@@ -6489,7 +6641,7 @@ function initProps (vm, propsOptions) {
       defineReactive$$1(props, key, value, function () {
         if (!isRoot && !isUpdatingChildComponent) {
           {
-            if(vm.mpHost === 'mp-baidu'){//百度 observer 在 setData callback 之后触发，直接忽略该 warn
+            if(vm.mpHost === 'mp-baidu' || vm.mpHost === 'mp-kuaishou'){//百度、快手 observer 在 setData callback 之后触发，直接忽略该 warn
                 return
             }
             //fixed by xxxxxx __next_tick_pending,uni://form-field 时不告警
@@ -7336,7 +7488,8 @@ function _diff(current, pre, path, result) {
                 var currentType = type(currentValue);
                 var preType = type(preValue);
                 if (currentType != ARRAYTYPE && currentType != OBJECTTYPE) {
-                    if (currentValue != pre[key]) {
+                    // NOTE 此处将 != 修改为 !==。涉及地方太多恐怕测试不到，如果出现数据对比问题，将其修改回来。
+                    if (currentValue !== pre[key]) {
                         setResult(result, (path == '' ? '' : path + ".") + key, currentValue);
                     }
                 } else if (currentType == ARRAYTYPE) {
@@ -7395,7 +7548,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7416,14 +7569,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7509,7 +7662,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"appDemo","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -7947,6 +8100,434 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
+/*!*************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.es.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.compileI18nJsonStr = compileI18nJsonStr;exports.hasI18nJson = hasI18nJson;exports.initVueI18n = initVueI18n;exports.isI18nStr = isI18nStr;exports.normalizeLocale = normalizeLocale;exports.parseI18nJson = parseI18nJson;exports.isString = exports.LOCALE_ZH_HANT = exports.LOCALE_ZH_HANS = exports.LOCALE_FR = exports.LOCALE_ES = exports.LOCALE_EN = exports.I18n = exports.Formatter = void 0;function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var isArray = Array.isArray;
+var isObject = function isObject(val) {return val !== null && typeof val === 'object';};
+var defaultDelimiters = ['{', '}'];var
+BaseFormatter = /*#__PURE__*/function () {
+  function BaseFormatter() {_classCallCheck(this, BaseFormatter);
+    this._caches = Object.create(null);
+  }_createClass(BaseFormatter, [{ key: "interpolate", value: function interpolate(
+    message, values) {var delimiters = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : defaultDelimiters;
+      if (!values) {
+        return [message];
+      }
+      var tokens = this._caches[message];
+      if (!tokens) {
+        tokens = parse(message, delimiters);
+        this._caches[message] = tokens;
+      }
+      return compile(tokens, values);
+    } }]);return BaseFormatter;}();exports.Formatter = BaseFormatter;
+
+var RE_TOKEN_LIST_VALUE = /^(?:\d)+/;
+var RE_TOKEN_NAMED_VALUE = /^(?:\w)+/;
+function parse(format, _ref) {var _ref2 = _slicedToArray(_ref, 2),startDelimiter = _ref2[0],endDelimiter = _ref2[1];
+  var tokens = [];
+  var position = 0;
+  var text = '';
+  while (position < format.length) {
+    var char = format[position++];
+    if (char === startDelimiter) {
+      if (text) {
+        tokens.push({ type: 'text', value: text });
+      }
+      text = '';
+      var sub = '';
+      char = format[position++];
+      while (char !== undefined && char !== endDelimiter) {
+        sub += char;
+        char = format[position++];
+      }
+      var isClosed = char === endDelimiter;
+      var type = RE_TOKEN_LIST_VALUE.test(sub) ?
+      'list' :
+      isClosed && RE_TOKEN_NAMED_VALUE.test(sub) ?
+      'named' :
+      'unknown';
+      tokens.push({ value: sub, type: type });
+    }
+    //  else if (char === '%') {
+    //   // when found rails i18n syntax, skip text capture
+    //   if (format[position] !== '{') {
+    //     text += char
+    //   }
+    // }
+    else {
+        text += char;
+      }
+  }
+  text && tokens.push({ type: 'text', value: text });
+  return tokens;
+}
+function compile(tokens, values) {
+  var compiled = [];
+  var index = 0;
+  var mode = isArray(values) ?
+  'list' :
+  isObject(values) ?
+  'named' :
+  'unknown';
+  if (mode === 'unknown') {
+    return compiled;
+  }
+  while (index < tokens.length) {
+    var token = tokens[index];
+    switch (token.type) {
+      case 'text':
+        compiled.push(token.value);
+        break;
+      case 'list':
+        compiled.push(values[parseInt(token.value, 10)]);
+        break;
+      case 'named':
+        if (mode === 'named') {
+          compiled.push(values[token.value]);
+        } else
+        {
+          if (true) {
+            console.warn("Type of token '".concat(token.type, "' and format of value '").concat(mode, "' don't match!"));
+          }
+        }
+        break;
+      case 'unknown':
+        if (true) {
+          console.warn("Detect 'unknown' type of token!");
+        }
+        break;}
+
+    index++;
+  }
+  return compiled;
+}
+
+var LOCALE_ZH_HANS = 'zh-Hans';exports.LOCALE_ZH_HANS = LOCALE_ZH_HANS;
+var LOCALE_ZH_HANT = 'zh-Hant';exports.LOCALE_ZH_HANT = LOCALE_ZH_HANT;
+var LOCALE_EN = 'en';exports.LOCALE_EN = LOCALE_EN;
+var LOCALE_FR = 'fr';exports.LOCALE_FR = LOCALE_FR;
+var LOCALE_ES = 'es';exports.LOCALE_ES = LOCALE_ES;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var hasOwn = function hasOwn(val, key) {return hasOwnProperty.call(val, key);};
+var defaultFormatter = new BaseFormatter();
+function include(str, parts) {
+  return !!parts.find(function (part) {return str.indexOf(part) !== -1;});
+}
+function startsWith(str, parts) {
+  return parts.find(function (part) {return str.indexOf(part) === 0;});
+}
+function normalizeLocale(locale, messages) {
+  if (!locale) {
+    return;
+  }
+  locale = locale.trim().replace(/_/g, '-');
+  if (messages && messages[locale]) {
+    return locale;
+  }
+  locale = locale.toLowerCase();
+  if (locale.indexOf('zh') === 0) {
+    if (locale.indexOf('-hans') !== -1) {
+      return LOCALE_ZH_HANS;
+    }
+    if (locale.indexOf('-hant') !== -1) {
+      return LOCALE_ZH_HANT;
+    }
+    if (include(locale, ['-tw', '-hk', '-mo', '-cht'])) {
+      return LOCALE_ZH_HANT;
+    }
+    return LOCALE_ZH_HANS;
+  }
+  var lang = startsWith(locale, [LOCALE_EN, LOCALE_FR, LOCALE_ES]);
+  if (lang) {
+    return lang;
+  }
+}var
+I18n = /*#__PURE__*/function () {
+  function I18n(_ref3) {var locale = _ref3.locale,fallbackLocale = _ref3.fallbackLocale,messages = _ref3.messages,watcher = _ref3.watcher,formater = _ref3.formater;_classCallCheck(this, I18n);
+    this.locale = LOCALE_EN;
+    this.fallbackLocale = LOCALE_EN;
+    this.message = {};
+    this.messages = {};
+    this.watchers = [];
+    if (fallbackLocale) {
+      this.fallbackLocale = fallbackLocale;
+    }
+    this.formater = formater || defaultFormatter;
+    this.messages = messages || {};
+    this.setLocale(locale || LOCALE_EN);
+    if (watcher) {
+      this.watchLocale(watcher);
+    }
+  }_createClass(I18n, [{ key: "setLocale", value: function setLocale(
+    locale) {var _this = this;
+      var oldLocale = this.locale;
+      this.locale = normalizeLocale(locale, this.messages) || this.fallbackLocale;
+      if (!this.messages[this.locale]) {
+        // 可能初始化时不存在
+        this.messages[this.locale] = {};
+      }
+      this.message = this.messages[this.locale];
+      // 仅发生变化时，通知
+      if (oldLocale !== this.locale) {
+        this.watchers.forEach(function (watcher) {
+          watcher(_this.locale, oldLocale);
+        });
+      }
+    } }, { key: "getLocale", value: function getLocale()
+    {
+      return this.locale;
+    } }, { key: "watchLocale", value: function watchLocale(
+    fn) {var _this2 = this;
+      var index = this.watchers.push(fn) - 1;
+      return function () {
+        _this2.watchers.splice(index, 1);
+      };
+    } }, { key: "add", value: function add(
+    locale, message) {var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var curMessages = this.messages[locale];
+      if (curMessages) {
+        if (override) {
+          Object.assign(curMessages, message);
+        } else
+        {
+          Object.keys(message).forEach(function (key) {
+            if (!hasOwn(curMessages, key)) {
+              curMessages[key] = message[key];
+            }
+          });
+        }
+      } else
+      {
+        this.messages[locale] = message;
+      }
+    } }, { key: "f", value: function f(
+    message, values, delimiters) {
+      return this.formater.interpolate(message, values, delimiters).join('');
+    } }, { key: "t", value: function t(
+    key, locale, values) {
+      var message = this.message;
+      if (typeof locale === 'string') {
+        locale = normalizeLocale(locale, this.messages);
+        locale && (message = this.messages[locale]);
+      } else
+      {
+        values = locale;
+      }
+      if (!hasOwn(message, key)) {
+        console.warn("Cannot translate the value of keypath ".concat(key, ". Use the value of keypath as default."));
+        return key;
+      }
+      return this.formater.interpolate(message[key], values).join('');
+    } }]);return I18n;}();exports.I18n = I18n;
+
+
+var ignoreVueI18n = true;
+function watchAppLocale(appVm, i18n) {
+  appVm.$watch(function () {return appVm.$locale;}, function (newLocale) {
+    i18n.setLocale(newLocale);
+  });
+}
+function initVueI18n(locale) {var messages = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var fallbackLocale = arguments.length > 2 ? arguments[2] : undefined;var watcher = arguments.length > 3 ? arguments[3] : undefined;
+  // 兼容旧版本入参
+  if (typeof locale !== 'string') {var _ref4 =
+    [
+    messages,
+    locale];locale = _ref4[0];messages = _ref4[1];
+
+  }
+  if (typeof locale !== 'string') {
+    locale =
+    typeof uni !== 'undefined' && uni.getLocale && uni.getLocale() ||
+    LOCALE_EN;
+  }
+  if (typeof fallbackLocale !== 'string') {
+    fallbackLocale =
+    typeof __uniConfig !== 'undefined' && __uniConfig.fallbackLocale ||
+    LOCALE_EN;
+  }
+  var i18n = new I18n({
+    locale: locale,
+    fallbackLocale: fallbackLocale,
+    messages: messages,
+    watcher: watcher });
+
+  var _t = function t(key, values) {
+    if (typeof getApp !== 'function') {
+      // app view
+      /* eslint-disable no-func-assign */
+      _t = function t(key, values) {
+        return i18n.t(key, values);
+      };
+    } else
+    {
+      var appVm = getApp().$vm;
+      watchAppLocale(appVm, i18n);
+      if (!appVm.$t || !appVm.$i18n || ignoreVueI18n) {
+        // if (!locale) {
+        //   i18n.setLocale(getDefaultLocale())
+        // }
+        /* eslint-disable no-func-assign */
+        _t = function t(key, values) {
+          // 触发响应式
+          appVm.$locale;
+          return i18n.t(key, values);
+        };
+      } else
+      {
+        /* eslint-disable no-func-assign */
+        _t = function t(key, values) {
+          var $i18n = appVm.$i18n;
+          var silentTranslationWarn = $i18n.silentTranslationWarn;
+          $i18n.silentTranslationWarn = true;
+          var msg = appVm.$t(key, values);
+          $i18n.silentTranslationWarn = silentTranslationWarn;
+          if (msg !== key) {
+            return msg;
+          }
+          return i18n.t(key, $i18n.locale, values);
+        };
+      }
+    }
+    return _t(key, values);
+  };
+  return {
+    i18n: i18n,
+    f: function f(message, values, delimiters) {
+      return i18n.f(message, values, delimiters);
+    },
+    t: function t(key, values) {
+      return _t(key, values);
+    },
+    add: function add(locale, message) {var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      return i18n.add(locale, message, override);
+    },
+    watch: function watch(fn) {
+      return i18n.watchLocale(fn);
+    },
+    getLocale: function getLocale() {
+      return i18n.getLocale();
+    },
+    setLocale: function setLocale(newLocale) {
+      return i18n.setLocale(newLocale);
+    } };
+
+}
+
+var isString = function isString(val) {return typeof val === 'string';};exports.isString = isString;
+var formater;
+function hasI18nJson(jsonObj, delimiters) {
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  return walkJsonObj(jsonObj, function (jsonObj, key) {
+    var value = jsonObj[key];
+    if (isString(value)) {
+      if (isI18nStr(value, delimiters)) {
+        return true;
+      }
+    } else
+    {
+      return hasI18nJson(value, delimiters);
+    }
+  });
+}
+function parseI18nJson(jsonObj, values, delimiters) {
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  walkJsonObj(jsonObj, function (jsonObj, key) {
+    var value = jsonObj[key];
+    if (isString(value)) {
+      if (isI18nStr(value, delimiters)) {
+        jsonObj[key] = compileStr(value, values, delimiters);
+      }
+    } else
+    {
+      parseI18nJson(value, values, delimiters);
+    }
+  });
+  return jsonObj;
+}
+function compileI18nJsonStr(jsonStr, _ref5) {var locale = _ref5.locale,locales = _ref5.locales,delimiters = _ref5.delimiters;
+  if (!isI18nStr(jsonStr, delimiters)) {
+    return jsonStr;
+  }
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  var localeValues = [];
+  Object.keys(locales).forEach(function (name) {
+    if (name !== locale) {
+      localeValues.push({
+        locale: name,
+        values: locales[name] });
+
+    }
+  });
+  localeValues.unshift({ locale: locale, values: locales[locale] });
+  try {
+    return JSON.stringify(compileJsonObj(JSON.parse(jsonStr), localeValues, delimiters), null, 2);
+  }
+  catch (e) {}
+  return jsonStr;
+}
+function isI18nStr(value, delimiters) {
+  return value.indexOf(delimiters[0]) > -1;
+}
+function compileStr(value, values, delimiters) {
+  return formater.interpolate(value, values, delimiters).join('');
+}
+function compileValue(jsonObj, key, localeValues, delimiters) {
+  var value = jsonObj[key];
+  if (isString(value)) {
+    // 存在国际化
+    if (isI18nStr(value, delimiters)) {
+      jsonObj[key] = compileStr(value, localeValues[0].values, delimiters);
+      if (localeValues.length > 1) {
+        // 格式化国际化语言
+        var valueLocales = jsonObj[key + 'Locales'] = {};
+        localeValues.forEach(function (localValue) {
+          valueLocales[localValue.locale] = compileStr(value, localValue.values, delimiters);
+        });
+      }
+    }
+  } else
+  {
+    compileJsonObj(value, localeValues, delimiters);
+  }
+}
+function compileJsonObj(jsonObj, localeValues, delimiters) {
+  walkJsonObj(jsonObj, function (jsonObj, key) {
+    compileValue(jsonObj, key, localeValues, delimiters);
+  });
+  return jsonObj;
+}
+function walkJsonObj(jsonObj, walk) {
+  if (isArray(jsonObj)) {
+    for (var i = 0; i < jsonObj.length; i++) {
+      if (walk(jsonObj, i)) {
+        return true;
+      }
+    }
+  } else
+  if (isObject(jsonObj)) {
+    for (var key in jsonObj) {
+      if (walk(jsonObj, key)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 5 */
 /*!*************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/pages.json ***!
   \*************************************************/
@@ -7956,12 +8537,12 @@ module.exports = g;
 
 
 /***/ }),
-/* 5 */,
 /* 6 */,
 /* 7 */,
 /* 8 */,
 /* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
   \**********************************************************************************************************/
@@ -8089,7 +8670,43 @@ function normalizeComponent (
 
 
 /***/ }),
-/* 11 */
+/* 12 */
+/*!*******************************************************!*\
+  !*** C:/公共/StudyHcc/appDemo/appDemo/router/router.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });Object.defineProperty(exports, "RouterMount", { enumerable: true, get: function get() {return _uniSimpleRouter.RouterMount;} });exports.router = void 0;
+var _uniSimpleRouter = __webpack_require__(/*! uni-simple-router */ 13);function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+
+var router = (0, _uniSimpleRouter.createRouter)({
+  platform: "mp-weixin",
+  routes: _toConsumableArray([{"path":"/pages/index/index","aliasPath":"/"},{"path":"/pages/index/search","name":"books/search"}]) });
+
+//全局路由前置守卫
+exports.router = router;router.beforeEach(function (to, from, next) {
+  next();
+});
+// 全局路由后置守卫
+router.afterEach(function (to, from) {
+  console.log('跳转结束');
+});
+
+/***/ }),
+/* 13 */
+/*!***********************************************************************************************!*\
+  !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uni-simple-router/dist/uni-simple-router.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(uni) {!function (e, t) { true ? module.exports = t() : undefined;}(self, function () {return e = { 779: function _(e, t, r) {var o = r(173);e.exports = function e(t, r, n) {return o(r) || (n = r || n, r = []), n = n || {}, t instanceof RegExp ? function (e, t) {var r = e.source.match(/\((?!\?)/g);if (r) for (var o = 0; o < r.length; o++) {t.push({ name: o, prefix: null, delimiter: null, optional: !1, repeat: !1, partial: !1, asterisk: !1, pattern: null });}return c(e, t);}(t, r) : o(t) ? function (t, r, o) {for (var n = [], a = 0; a < t.length; a++) {n.push(e(t[a], r, o).source);}return c(new RegExp("(?:" + n.join("|") + ")", s(o)), r);}(t, r, n) : function (e, t, r) {return f(a(e, r), t, r);}(t, r, n);}, e.exports.parse = a, e.exports.compile = function (e, t) {return u(a(e, t), t);}, e.exports.tokensToFunction = u, e.exports.tokensToRegExp = f;var n = new RegExp(["(\\\\.)", "([\\/.])?(?:(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?|(\\*))"].join("|"), "g");function a(e, t) {for (var r, o = [], a = 0, i = 0, u = "", c = t && t.delimiter || "/"; null != (r = n.exec(e));) {var s = r[0],f = r[1],h = r.index;if (u += e.slice(i, h), i = h + s.length, f) u += f[1];else {var v = e[i],y = r[2],g = r[3],d = r[4],m = r[5],b = r[6],O = r[7];u && (o.push(u), u = "");var P = null != y && null != v && v !== y,k = "+" === b || "*" === b,j = "?" === b || "*" === b,w = r[2] || c,R = d || m;o.push({ name: g || a++, prefix: y || "", delimiter: w, optional: j, repeat: k, partial: P, asterisk: !!O, pattern: R ? p(R) : O ? ".*" : "[^" + l(w) + "]+?" });}}return i < e.length && (u += e.substr(i)), u && o.push(u), o;}function i(e) {return encodeURI(e).replace(/[\/?#]/g, function (e) {return "%" + e.charCodeAt(0).toString(16).toUpperCase();});}function u(e, t) {for (var r = new Array(e.length), n = 0; n < e.length; n++) {"object" == typeof e[n] && (r[n] = new RegExp("^(?:" + e[n].pattern + ")$", s(t)));}return function (t, n) {for (var a = "", u = t || {}, l = (n || {}).pretty ? i : encodeURIComponent, p = 0; p < e.length; p++) {var c = e[p];if ("string" != typeof c) {var s,f = u[c.name];if (null == f) {if (c.optional) {c.partial && (a += c.prefix);continue;}throw new TypeError('Expected "' + c.name + '" to be defined');}if (o(f)) {if (!c.repeat) throw new TypeError('Expected "' + c.name + '" to not repeat, but received `' + JSON.stringify(f) + "`");if (0 === f.length) {if (c.optional) continue;throw new TypeError('Expected "' + c.name + '" to not be empty');}for (var h = 0; h < f.length; h++) {if (s = l(f[h]), !r[p].test(s)) throw new TypeError('Expected all "' + c.name + '" to match "' + c.pattern + '", but received `' + JSON.stringify(s) + "`");a += (0 === h ? c.prefix : c.delimiter) + s;}} else {if (s = c.asterisk ? encodeURI(f).replace(/[?#]/g, function (e) {return "%" + e.charCodeAt(0).toString(16).toUpperCase();}) : l(f), !r[p].test(s)) throw new TypeError('Expected "' + c.name + '" to match "' + c.pattern + '", but received "' + s + '"');a += c.prefix + s;}} else a += c;}return a;};}function l(e) {return e.replace(/([.+*?=^!:${}()[\]|\/\\])/g, "\\$1");}function p(e) {return e.replace(/([=!:$\/()])/g, "\\$1");}function c(e, t) {return e.keys = t, e;}function s(e) {return e && e.sensitive ? "" : "i";}function f(e, t, r) {o(t) || (r = t || r, t = []);for (var n = (r = r || {}).strict, a = !1 !== r.end, i = "", u = 0; u < e.length; u++) {var p = e[u];if ("string" == typeof p) i += l(p);else {var f = l(p.prefix),h = "(?:" + p.pattern + ")";t.push(p), p.repeat && (h += "(?:" + f + h + ")*"), i += h = p.optional ? p.partial ? f + "(" + h + ")?" : "(?:" + f + "(" + h + "))?" : f + "(" + h + ")";}}var v = l(r.delimiter || "/"),y = i.slice(-v.length) === v;return n || (i = (y ? i.slice(0, -v.length) : i) + "(?:" + v + "(?=$))?"), i += a ? "$" : n && y ? "" : "(?=" + v + "|$)", c(new RegExp("^" + i, s(r)), t);}}, 173: function _(e) {e.exports = Array.isArray || function (e) {return "[object Array]" == Object.prototype.toString.call(e);};}, 844: function _(e, t, r) {"use strict";var o = this && this.__assign || function () {return (o = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);};Object.defineProperty(t, "__esModule", { value: !0 }), t.buildVueRouter = t.buildVueRoutes = void 0;var n = r(366),a = r(883),i = r(789),u = r(169);t.buildVueRoutes = function (e, t) {for (var r = e.routesMap, o = r.pathMap, l = r.finallyPathList, p = Object.keys(t), c = 0; c < p.length; c++) {var s = p[c],f = o[s],h = t[s];if (f) {var v = i.getRoutePath(f, e).finallyPath;if (v instanceof Array) throw new Error("非 vueRouterDev 模式下，alias、aliasPath、path 无法提供数组类型！ " + JSON.stringify(f));null != f.name && (h.name = f.name);var y = h.path,g = h.alias;delete h.alias, h.path = v, "/" === y && null != g && (h.alias = g, h.path = y), f.beforeEnter && (h.beforeEnter = function (t, r, o) {u.onTriggerEachHook(t, r, e, n.hookToggle.enterHooks, o);});} else a.warn(s + " 路由地址在路由表中未找到，确定是否传递漏啦", e, !0);}return l.includes("*") && (t["*"] = o["*"]), t;}, t.buildVueRouter = function (e, t, r) {var n;n = "[object Array]" === i.getDataType(r) ? r : Object.values(r);var a = e.options.h5,u = a.scrollBehavior,l = a.fallback,p = t.options.scrollBehavior;t.options.scrollBehavior = function (e, t, r) {return p && p(e, t, r), u(e, t, r);}, t.fallback = l;var c = new t.constructor(o(o({}, e.options.h5), { base: t.options.base, mode: t.options.mode, routes: n }));t.matcher = c.matcher;};}, 147: function _(e, t) {"use strict";var _r,o = this && this.__extends || (_r = function r(e, t) {return (_r = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function (e, t) {e.__proto__ = t;} || function (e, t) {for (var r in t) {Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);}})(e, t);}, function (e, t) {function o() {this.constructor = e;}_r(e, t), e.prototype = null === t ? Object.create(t) : (o.prototype = t.prototype, new o());});Object.defineProperty(t, "__esModule", { value: !0 }), t.proxyH5Mount = t.proxyEachHook = t.MyArray = void 0;var n = function (e) {function t(r, o, n, a) {var i = e.call(this) || this;return i.router = r, i.vueEachArray = o, i.myEachHook = n, i.hookName = a, Object.setPrototypeOf(i, t.prototype), i;}return o(t, e), t.prototype.push = function (e) {var t = this;this.vueEachArray.push(e);var r = this.length;this[this.length] = function (e, o, n) {r > 0 ? t.vueEachArray[r](e, o, function () {n && n();}) : t.myEachHook(e, o, function (a) {!1 === a ? n(!1) : t.vueEachArray[r](e, o, function (e) {n(a);});}, t.router, !0);};}, t;}(Array);t.MyArray = n, t.proxyEachHook = function (e, t) {for (var r = ["beforeHooks", "afterHooks"], o = 0; o < r.length; o++) {var a = r[o],i = e.lifeCycle[a][0];if (i) {var u = t[a];t[a] = new n(e, u, i, a);}}}, t.proxyH5Mount = function (e) {var t;if (0 === e.mount.length) {if (null === (t = e.options.h5) || void 0 === t ? void 0 : t.vueRouterDev) return;navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) && setTimeout(function () {if (document.getElementsByTagName("uni-page").length > 0) return !1;window.location.reload();}, 0);} else e.mount[0].app.$mount(), e.mount = [];};}, 814: function _(e, t) {"use strict";var r = this && this.__assign || function () {return (r = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);};Object.defineProperty(t, "__esModule", { value: !0 }), t.tabIndexSelect = t.runtimeQuit = t.registerLoddingPage = void 0;var o = null,n = null;t.registerLoddingPage = function (e) {if (e.options.registerLoadingPage) {var t = e.options.APP,o = t.loadingPageHook,n = t.loadingPageStyle;o(new plus.nativeObj.View("router-loadding", r({ top: "0px", left: "0px", height: "100%", width: "100%" }, n())));}}, t.runtimeQuit = function (e) {void 0 === e && (e = "再按一次退出应用");var t = +new Date();o ? t - o < 1e3 && plus.runtime.quit() : (o = t, uni.showToast({ title: e, icon: "none", position: "bottom", duration: 1e3 }), setTimeout(function () {o = null;}, 1e3));}, t.tabIndexSelect = function (e, t) {if (!__uniConfig.tabBar || !Array.isArray(__uniConfig.tabBar.list)) return !1;for (var r = __uniConfig.tabBar.list, o = [], a = 0, i = 0; i < r.length; i++) {var u = r[i];if ("/" + u.pagePath !== e.path && "/" + u.pagePath !== t.path || (u.pagePath === t.path && (a = i), o.push(u)), 2 === o.length) break;}return 2 === o.length && (null == n && (n = uni.requireNativePlugin("uni-tabview")), n.switchSelect({ index: a }), !0);};}, 334: function _(e, t) {"use strict";Object.defineProperty(t, "__esModule", { value: !0 }), t.getEnterPath = void 0, t.getEnterPath = function (e, t) {switch (t.options.platform) {case "mp-alipay":case "mp-weixin":case "mp-toutiao":case "mp-qq":return e.$options.mpInstance.route;case "mp-baidu":return e.$options.mpInstance.is || e.$options.mpInstance.pageinstance.route;}return e.$options.mpInstance.route;};}, 282: function _(e, t, r) {"use strict";Object.defineProperty(t, "__esModule", { value: !0 }), t.proxyHookName = t.proxyHookDeps = t.lifeCycle = t.baseConfig = t.mpPlatformReg = void 0;var o = r(883);t.mpPlatformReg = "(^mp-weixin$)|(^mp-baidu$)|(^mp-alipay$)|(^mp-toutiao$)|(^mp-qq$)|(^mp-360$)", t.baseConfig = { h5: { paramsToQuery: !1, vueRouterDev: !1, vueNext: !1, mode: "hash", base: "/", linkActiveClass: "router-link-active", linkExactActiveClass: "router-link-exact-active", scrollBehavior: function scrollBehavior(e, t, r) {return { x: 0, y: 0 };}, fallback: !0 }, APP: { registerLoadingPage: !0, loadingPageStyle: function loadingPageStyle() {return JSON.parse('{"backgroundColor":"#FFF"}');}, loadingPageHook: function loadingPageHook(e) {e.show();}, launchedHook: function launchedHook() {plus.navigator.closeSplashscreen();}, animation: {} }, applet: { animationDuration: 300 }, platform: "h5", keepUniOriginNav: !1, debugger: !1, routerBeforeEach: function routerBeforeEach(e, t, r) {r();}, routerAfterEach: function routerAfterEach(e, t) {}, routerErrorEach: function routerErrorEach(e, t) {t.$lockStatus = !1, o.err(e, t, !0);}, detectBeforeLock: function detectBeforeLock(e, t, r) {}, routes: [{ path: "/choose-location" }, { path: "/open-location" }, { path: "/preview-image" }] }, t.lifeCycle = { beforeHooks: [], afterHooks: [], routerBeforeHooks: [], routerAfterHooks: [], routerErrorHooks: [] }, t.proxyHookDeps = { resetIndex: [], hooks: {}, options: {} }, t.proxyHookName = ["onLaunch", "onShow", "onHide", "onError", "onInit", "onLoad", "onReady", "onUnload", "onResize", "created", "beforeMount", "mounted", "beforeDestroy", "destroyed"];}, 801: function _(e, t, r) {"use strict";Object.defineProperty(t, "__esModule", { value: !0 }), t.createRouteMap = void 0;var o = r(883),n = r(789);t.createRouteMap = function (e, t) {var r = { finallyPathList: [], finallyPathMap: Object.create(null), aliasPathMap: Object.create(null), pathMap: Object.create(null), vueRouteMap: Object.create(null), nameMap: Object.create(null) };return t.forEach(function (t) {var a = n.getRoutePath(t, e),i = a.finallyPath,u = a.aliasPath,l = a.path;if (null == l) throw new Error("请提供一个完整的路由对象，包括以绝对路径开始的 ‘path’ 字符串 " + JSON.stringify(t));if (i instanceof Array && !e.options.h5.vueRouterDev && "h5" === e.options.platform) throw new Error("非 vueRouterDev 模式下，route.alias 目前无法提供数组类型！ " + JSON.stringify(t));var p = i,c = u;"h5" !== e.options.platform && 0 !== p.indexOf("/") && "*" !== l && o.warn("当前路由对象下，route：" + JSON.stringify(t) + " 是否缺少了前缀 ‘/’", e, !0), r.finallyPathMap[p] || (r.finallyPathMap[p] = t, r.aliasPathMap[c] = t, r.pathMap[l] = t, r.finallyPathList.push(p), null != t.name && (r.nameMap[t.name] = t));}), r;};}, 662: function _(e, t, r) {"use strict";Object.defineProperty(t, "__esModule", { value: !0 }), t.registerEachHooks = t.registerRouterHooks = t.registerHook = void 0;var o = r(366),n = r(169);function a(e, t) {e[0] = t;}t.registerHook = a, t.registerRouterHooks = function (e, t) {return a(e.routerBeforeHooks, function (e, r, o) {t.routerBeforeEach(e, r, o);}), a(e.routerAfterHooks, function (e, r) {t.routerAfterEach(e, r);}), a(e.routerErrorHooks, function (e, r) {t.routerErrorEach(e, r);}), e;}, t.registerEachHooks = function (e, t, r) {a(e.lifeCycle[t], function (e, a, i, u, l) {l ? n.onTriggerEachHook(e, a, u, o.hookToggle[t], i) : r(e, a, i);});};}, 460: function _(e, t, r) {"use strict";var o = this && this.__assign || function () {return (o = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);};Object.defineProperty(t, "__esModule", { value: !0 }), t.initMixins = t.getMixins = void 0;var n = r(801),a = r(844),i = r(147),u = r(814),l = r(845),p = r(890),c = r(789),s = r(334),f = r(282),h = !1,v = !1,y = { app: !1, page: "" };function g(e, t) {var r = t.options.platform;return new RegExp(f.mpPlatformReg, "g").test(r) && (r = "app-lets"), { h5: { beforeCreate: function beforeCreate() {var e;if (this.$options.router) {t.$route = this.$options.router;var r = [];(null === (e = t.options.h5) || void 0 === e ? void 0 : e.vueRouterDev) ? r = t.options.routes : (r = n.createRouteMap(t, this.$options.router.options.routes).finallyPathMap, t.routesMap.vueRouteMap = r, a.buildVueRoutes(t, r)), a.buildVueRouter(t, this.$options.router, r), i.proxyEachHook(t, this.$options.router);}} }, "app-plus": { beforeCreate: function beforeCreate() {h || (h = !0, l.proxyPageHook(this, t, "app"), u.registerLoddingPage(t));} }, "app-lets": { beforeCreate: function beforeCreate() {c.voidFun("UNI-SIMPLE-ROUTER");var e = !0,r = this.$options.mpType;v || ("component" === r ? e = c.assertParentChild(y.page, this) : "page" === r ? (y[r] = s.getEnterPath(this, t), t.enterPath = y[r]) : y[r] = !0, e && l.proxyPageHook(this, t, r));}, onLoad: function onLoad() {c.voidFun("UNI-SIMPLE-ROUTER"), !v && c.assertParentChild(y.page, this) && (v = !0, p.forceGuardEach(t));} } }[r];}t.getMixins = g, t.initMixins = function (e, t) {var r = n.createRouteMap(t, t.options.routes);t.routesMap = r, e.mixin(o({}, g(0, t)));};}, 789: function _(e, t, r) {"use strict";var o = this && this.__assign || function () {return (o = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);},n = this && this.__rest || function (e, t) {var r = {};for (var o in e) {Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (r[o] = e[o]);}if (null != e && "function" == typeof Object.getOwnPropertySymbols) {var n = 0;for (o = Object.getOwnPropertySymbols(e); n < o.length; n++) {t.indexOf(o[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[n]) && (r[o[n]] = e[o[n]]);}}return r;},a = this && this.__spreadArrays || function () {for (var e = 0, t = 0, r = arguments.length; t < r; t++) {e += arguments[t].length;}var o = Array(e),n = 0;for (t = 0; t < r; t++) {for (var a = arguments[t], i = 0, u = a.length; i < u; i++, n++) {o[n] = a[i];}}return o;};Object.defineProperty(t, "__esModule", { value: !0 }), t.deepDecodeQuery = t.resolveAbsolutePath = t.assertParentChild = t.lockDetectWarn = t.deepClone = t.baseClone = t.assertDeepObject = t.paramsToQuery = t.forMatNextToFrom = t.urlToJson = t.getUniCachePage = t.copyData = t.getDataType = t.routesForMapRoute = t.notRouteTo404 = t.getWildcardRule = t.assertNewOptions = t.getRoutePath = t.notDeepClearNull = t.mergeConfig = t.timeOut = t.def = t.voidFun = void 0;var i = r(282),u = r(169),l = r(883),p = r(890),c = r(779);function s(e, t) {for (var r = Object.create(null), n = Object.keys(e).concat(["resolveQuery", "parseQuery"]), i = 0; i < n.length; i += 1) {var u = n[i];null != t[u] ? t[u].constructor === Object ? r[u] = o(o({}, e[u]), t[u]) : r[u] = "routes" === u ? a(e[u], t[u]) : t[u] : r[u] = e[u];}return r;}function f(e, t) {var r = e.aliasPath || e.alias || e.path;return "h5" !== t.options.platform && (r = e.path), { finallyPath: r, aliasPath: e.aliasPath || e.path, path: e.path, alias: e.alias };}function h(e, t) {var r = e.routesMap.finallyPathMap["*"];if (r) return r;throw t && u.ERRORHOOK[0](t, e), new Error("当前路由表匹配规则已全部匹配完成，未找到满足的匹配规则。你可以使用 '*' 通配符捕捉最后的异常");}function v(e) {return Object.prototype.toString.call(e);}function y(e, t) {if (null == e) t = e;else for (var r = 0, o = Object.keys(e); r < o.length; r++) {var n = o[r],a = n;e[n] !== e && ("object" == typeof e[n] ? (t[a] = "[object Array]" === v(e[n]) ? [] : {}, t[a] = y(e[n], t[a])) : t[a] = e[n]);}return t;}function g(e) {var t = "[object Array]" === v(e) ? [] : {};return y(e, t), t;}t.voidFun = function () {for (var e = [], t = 0; t < arguments.length; t++) {e[t] = arguments[t];}}, t.def = function (e, t, r) {Object.defineProperty(e, t, { get: function get() {return r();} });}, t.timeOut = function (e) {return new Promise(function (t) {setTimeout(function () {t();}, e);});}, t.mergeConfig = s, t.notDeepClearNull = function (e) {for (var t in e) {null == e[t] && delete e[t];}return e;}, t.getRoutePath = f, t.assertNewOptions = function (e) {var t,r = e.platform,o = e.routes;if (null == r) throw new Error("你在实例化路由时必须传递 'platform'");if (null == o || 0 === o.length) throw new Error("你在实例化路由时必须传递 routes 为空，这是无意义的。");return "h5" === e.platform && (null === (t = e.h5) || void 0 === t ? void 0 : t.vueRouterDev) && (i.baseConfig.routes = []), s(i.baseConfig, e);}, t.getWildcardRule = h, t.notRouteTo404 = function (e, t, r, o) {if ("*" !== t.path) return t;var n = t.redirect;if (void 0 === n) throw new Error(" *  通配符必须配合 redirect 使用。redirect: string | Location | Function");var a = n;return "function" == typeof a && (a = a(r)), p.navjump(a, e, o, void 0, void 0, void 0, !1);}, t.routesForMapRoute = function e(t, r, o, n) {var a;if (void 0 === n && (n = !1), null === (a = t.options.h5) || void 0 === a ? void 0 : a.vueRouterDev) return { path: r };for (var i = r.split("?")[0], u = "", l = t.routesMap, p = 0; p < o.length; p++) {for (var s = l[o[p]], f = 0, y = Object.entries(s); f < y.length; f++) {var g = y[f],d = g[0],m = g[1];if ("*" !== d) {var b = m,O = d;if ("[object Array]" === v(s) && (O = b), null != c(O).exec(i)) return "[object String]" === v(b) ? l.finallyPathMap[b] : b;} else "" === u && (u = "*");}}if (n) return {};if (l.aliasPathMap) {var P = e(t, r, ["aliasPathMap"], !0);if (Object.keys(P).length > 0) return P;}if ("" !== u) return h(t);throw new Error(r + " 路径无法在路由表中找到！检查跳转路径及路由表");}, t.getDataType = v, t.copyData = function (e) {return JSON.parse(JSON.stringify(e));}, t.getUniCachePage = function (e) {var t = getCurrentPages();if (null == e) return t;if (0 === t.length) return t;var r = t.reverse()[e];return null == r ? [] : r;}, t.urlToJson = function (e) {var t = {},r = e.split("?"),o = r[0],n = r[1];if (null != n) for (var a = 0, i = n.split("&"); a < i.length; a++) {var u = i[a].split("=");t[u[0]] = u[1];}return { path: o, query: t };}, t.forMatNextToFrom = function (e, t, r) {var o = [t, r],n = o[0],a = o[1];if ("h5" === e.options.platform) {var i = e.options.h5,u = i.vueNext,l = i.vueRouterDev;u || l || (n = p.createRoute(e, void 0, n), a = p.createRoute(e, void 0, a));} else n = p.createRoute(e, void 0, g(n)), a = p.createRoute(e, void 0, g(a));return { matTo: n, matFrom: a };}, t.paramsToQuery = function (e, t) {var r;if ("h5" === e.options.platform && !(null === (r = e.options.h5) || void 0 === r ? void 0 : r.paramsToQuery)) return t;if ("[object Object]" === v(t)) {var a = t,i = a.name,l = a.params,p = n(a, ["name", "params"]),c = l;if ("h5" !== e.options.platform && null == c && (c = {}), null != i && null != c) {var s = e.routesMap.nameMap[i];null == s && (s = h(e, { type: 2, msg: "命名路由为：" + i + " 的路由，无法在路由表中找到！", toRule: t }));var y = f(s, e).finallyPath;if (!y.includes(":")) return o(o({}, p), { path: y, query: c });u.ERRORHOOK[0]({ type: 2, msg: "动态路由：" + y + " 无法使用 paramsToQuery！", toRule: t }, e);}}return t;}, t.assertDeepObject = function (e) {var t = null;try {t = JSON.stringify(e).match(/\{|\[|\}|\]/g);} catch (e) {l.warnLock("传递的参数解析对象失败。" + e);}return null != t && t.length > 3;}, t.baseClone = y, t.deepClone = g, t.lockDetectWarn = function (e, t, r, o, n, a) {if (void 0 === n && (n = {}), "afterHooks" === a) o();else {var i = e.options.detectBeforeLock;i && i(e, t, r), e.$lockStatus ? e.options.routerErrorEach({ type: 2, msg: "当前页面正在处于跳转状态，请稍后再进行跳转....", NAVTYPE: r, uniActualData: n }, e) : o();}}, t.assertParentChild = function (e, t) {for (; null != t.$parent;) {var r = t.$parent.$mp;if (r.page && r.page.is === e) return !0;t = t.$parent;}try {if (t.$mp.page.is === e || t.$mp.page.route === e) return !0;} catch (e) {return !1;}return !1;}, t.resolveAbsolutePath = function (e, t) {var r = /^\/?([^\?\s]+)(\?.+)?$/,o = e.trim();if (!r.test(o)) throw new Error("【" + e + "】 路径错误，请提供完整的路径(10001)。");var n = o.match(r);if (null == n) throw new Error("【" + e + "】 路径错误，请提供完整的路径(10002)。");var a = n[2] || "";if (/^\.\/[^\.]+/.test(o)) return (t.currentRoute.path + e).replace(/[^\/]+\.\//, "");var i = n[1].replace(/\//g, "\\/").replace(/\.\./g, "[^\\/]+").replace(/\./g, "\\."),u = new RegExp("^\\/" + i + "$"),l = t.options.routes.filter(function (e) {return u.test(e.path);});if (1 !== l.length) throw new Error("【" + e + "】 路径错误，尝试转成绝对路径失败，请手动转成绝对路径(10003)。");return l[0].path + a;}, t.deepDecodeQuery = function e(t) {for (var r = "[object Array]" === v(t) ? [] : {}, o = Object.keys(t), n = 0; n < o.length; n++) {var a = o[n],i = t[a];if ("string" == typeof i) try {var u = JSON.parse(decodeURIComponent(i));"object" != typeof u && (u = i), r[a] = u;} catch (e) {try {r[a] = decodeURIComponent(i);} catch (e) {r[a] = i;}} else if ("object" == typeof i) {var l = e(i);r[a] = l;} else r[a] = i;}return r;};}, 883: function _(e, t) {"use strict";function r(e, t, r, o) {if (void 0 === o && (o = !1), !o) {var n = "[object Object]" === t.toString();if (!1 === t) return !1;if (n && !1 === t[e]) return !1;}return console[e](r), !0;}Object.defineProperty(t, "__esModule", { value: !0 }), t.warnLock = t.log = t.warn = t.err = t.isLog = void 0, t.isLog = r, t.err = function (e, t, o) {r("error", t.options.debugger, e, o);}, t.warn = function (e, t, o) {r("warn", t.options.debugger, e, o);}, t.log = function (e, t, o) {r("log", t.options.debugger, e, o);}, t.warnLock = function (e) {console.warn(e);};}, 607: function _(e, t, r) {"use strict";var o = this && this.__createBinding || (Object.create ? function (e, t, r, o) {void 0 === o && (o = r), Object.defineProperty(e, o, { enumerable: !0, get: function get() {return t[r];} });} : function (e, t, r, o) {void 0 === o && (o = r), e[o] = t[r];}),n = this && this.__exportStar || function (e, t) {for (var r in e) {"default" === r || Object.prototype.hasOwnProperty.call(t, r) || o(t, e, r);}};Object.defineProperty(t, "__esModule", { value: !0 }), t.createRouter = t.RouterMount = t.runtimeQuit = void 0, n(r(366), t), n(r(309), t);var a = r(814);Object.defineProperty(t, "runtimeQuit", { enumerable: !0, get: function get() {return a.runtimeQuit;} });var i = r(963);Object.defineProperty(t, "RouterMount", { enumerable: !0, get: function get() {return i.RouterMount;} }), Object.defineProperty(t, "createRouter", { enumerable: !0, get: function get() {return i.createRouter;} });}, 366: function _(e, t) {"use strict";var r, o, n;Object.defineProperty(t, "__esModule", { value: !0 }), t.rewriteMethodToggle = t.navtypeToggle = t.hookToggle = void 0, (n = t.hookToggle || (t.hookToggle = {})).beforeHooks = "beforeEach", n.afterHooks = "afterEach", n.enterHooks = "beforeEnter", (o = t.navtypeToggle || (t.navtypeToggle = {})).push = "navigateTo", o.replace = "redirectTo", o.replaceAll = "reLaunch", o.pushTab = "switchTab", o.back = "navigateBack", (r = t.rewriteMethodToggle || (t.rewriteMethodToggle = {})).navigateTo = "push", r.navigate = "push", r.redirectTo = "replace", r.reLaunch = "replaceAll", r.switchTab = "pushTab", r.navigateBack = "back";}, 309: function _(e, t) {"use strict";Object.defineProperty(t, "__esModule", { value: !0 });}, 169: function _(e, t, r) {"use strict";var o = this && this.__rest || function (e, t) {var r = {};for (var o in e) {Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (r[o] = e[o]);}if (null != e && "function" == typeof Object.getOwnPropertySymbols) {var n = 0;for (o = Object.getOwnPropertySymbols(e); n < o.length; n++) {t.indexOf(o[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[n]) && (r[o[n]] = e[o[n]]);}}return r;};Object.defineProperty(t, "__esModule", { value: !0 }), t.loopCallHook = t.transitionTo = t.onTriggerEachHook = t.callHook = t.callBeforeRouteLeave = t.HOOKLIST = t.ERRORHOOK = void 0;var n = r(789),a = r(890),i = r(147),u = r(814);function l(e, t, r, o) {var a,i = n.getUniCachePage(0);if (Object.keys(i).length > 0) {var u = void 0;switch ("h5" === e.options.platform ? u = i.$options.beforeRouteLeave : null != i.$vm && (u = i.$vm.$options.beforeRouteLeave), n.getDataType(u)) {case "[object Array]":a = (a = u[0]).bind(i);break;case "[object Function]":a = u.bind(i.$vm);}}return p(a, t, r, e, o);}function p(e, t, r, o, n, a) {void 0 === a && (a = !0), null != e && e instanceof Function ? !0 === a ? e(t, r, n, o, !1) : (e(t, r, function () {}, o, !1), n()) : n();}function c(e, t, r, o, a, i) {var u = n.forMatNextToFrom(e, t, r),l = u.matTo,p = u.matFrom;"h5" === e.options.platform ? s(a, 0, i, e, l, p, o) : s(a.slice(0, 4), 0, function () {i(function () {s(a.slice(4), 0, n.voidFun, e, l, p, o);});}, e, l, p, o);}function s(e, r, i, l, p, c, f) {var h = n.routesForMapRoute(l, p.path, ["finallyPathMap", "pathMap"]);if (e.length - 1 < r) return i();var v = e[r],y = t.ERRORHOOK[0];v(l, p, c, h, function (t) {if ("app-plus" === l.options.platform && (!1 !== t && "string" != typeof t && "object" != typeof t || u.tabIndexSelect(p, c)), !1 === t) "h5" === l.options.platform && i(!1), y({ type: 0, msg: "管道函数传递 false 导航被终止!", matTo: p, matFrom: c, nextTo: t }, l);else if ("string" == typeof t || "object" == typeof t) {var n = f,h = t;if ("object" == typeof t) {var v = t.NAVTYPE;h = o(t, ["NAVTYPE"]), null != v && (n = v);}a.navjump(h, l, n, { from: c, next: i });} else null == t ? (r++, s(e, r, i, l, p, c, f)) : y({ type: 1, msg: "管道函数传递未知类型，无法被识别。导航被终止！", matTo: p, matFrom: c, nextTo: t }, l);});}t.ERRORHOOK = [function (e, t) {return t.lifeCycle.routerErrorHooks[0](e, t);}], t.HOOKLIST = [function (e, t, r, o, n) {return p(e.lifeCycle.routerBeforeHooks[0], t, r, e, n);}, function (e, t, r, o, n) {return l(e, t, r, n);}, function (e, t, r, o, n) {return p(e.lifeCycle.beforeHooks[0], t, r, e, n);}, function (e, t, r, o, n) {return p(o.beforeEnter, t, r, e, n);}, function (e, t, r, o, n) {return p(e.lifeCycle.afterHooks[0], t, r, e, n, !1);}, function (e, t, r, o, n) {return e.$lockStatus = !1, "h5" === e.options.platform && i.proxyH5Mount(e), p(e.lifeCycle.routerAfterHooks[0], t, r, e, n, !1);}], t.callBeforeRouteLeave = l, t.callHook = p, t.onTriggerEachHook = function (e, r, o, n, a) {var i = [];switch (n) {case "beforeEach":i = t.HOOKLIST.slice(0, 3);break;case "afterEach":i = t.HOOKLIST.slice(4);break;case "beforeEnter":i = t.HOOKLIST.slice(3, 4);}c(o, e, r, "push", i, a);}, t.transitionTo = c, t.loopCallHook = s;}, 890: function _(e, t, r) {"use strict";var o = this && this.__assign || function () {return (o = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);},n = this && this.__rest || function (e, t) {var r = {};for (var o in e) {Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (r[o] = e[o]);}if (null != e && "function" == typeof Object.getOwnPropertySymbols) {var n = 0;for (o = Object.getOwnPropertySymbols(e); n < o.length; n++) {t.indexOf(o[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[n]) && (r[o[n]] = e[o[n]]);}}return r;};Object.defineProperty(t, "__esModule", { value: !0 }), t.createRoute = t.forceGuardEach = t.backOptionsBuild = t.navjump = t.lockNavjump = void 0;var a = r(366),i = r(99),u = r(789),l = r(169),p = r(845),c = r(169);function s(e, t, r, o, n) {u.lockDetectWarn(t, e, r, function () {"h5" !== t.options.platform && (t.$lockStatus = !0), f(e, t, r, void 0, o, n);}, n);}function f(e, t, r, n, s, f, v) {if (void 0 === v && (v = !0), "back" === r) {var y;if (y = "string" == typeof e ? +e : e.delta || 1, "h5" === t.options.platform) {t.$route.go(-y);var g = (f || { success: u.voidFun }).success || u.voidFun,d = (f || { complete: u.voidFun }).complete || u.voidFun;return g({ errMsg: "navigateBack:ok" }), void d({ errMsg: "navigateBack:ok" });}e = h(t, y, f);}var m = i.queryPageToMap(e, t).rule;m.type = a.navtypeToggle[r];var b = u.paramsToQuery(t, m),O = i.resolveQuery(b, t);if ("h5" === t.options.platform) {if ("push" !== r && (r = "replace"), null != n) n.next(o({ replace: "push" !== r }, O));else if ("push" === r && Reflect.has(O, "events")) {if (Reflect.has(O, "name")) throw new Error("在h5端上使用 'push'、'navigateTo' 跳转时，如果包含 events 不允许使用 name 跳转，因为 name 实现了动态路由。请更换为 path 或者 url 跳转！");uni.navigateTo(O, !0, u.voidFun, s);} else t.$route[r](O, O.success || u.voidFun, O.fail || u.voidFun);} else {var P = { path: "" };if (null == n) {var k = u.routesForMapRoute(t, O.path, ["finallyPathMap", "pathMap"]);k = u.notRouteTo404(t, k, O, r), O = o(o(o(o({}, k), { params: {} }), O), { path: k.path }), P = p.createToFrom(O, t);} else P = n.from;if (p.createFullPath(O, P), !1 === v) return O;l.transitionTo(t, O, P, r, c.HOOKLIST, function (e) {uni[a.navtypeToggle[r]](O, !0, e, s);});}}function h(e, t, r) {void 0 === r && (r = {});var n = v(e, t, void 0, o({ NAVTYPE: "back" }, r)),a = o(o({}, r), { path: n.path, query: n.query, delta: t });if ("[object Object]" === u.getDataType(r)) {var i = r,l = i.animationDuration,p = i.animationType;null != l && (a.animationDuration = l), null != p && (a.animationType = p);var c = r.from;null != c && (a.BACKTYPE = c);}return a;}function v(e, t, r, l) {void 0 === t && (t = 0), void 0 === l && (l = {});var p = { name: "", meta: {}, path: "", fullPath: "", NAVTYPE: "", query: {}, params: {}, BACKTYPE: (r || { BACKTYPE: "" }).BACKTYPE || "" };if (19970806 === t) return p;if ("h5" === e.options.platform) {var c = { path: "" };c = null != r ? r : e.$route.currentRoute;var s = u.copyData(c.params);delete s.__id__;var f = i.parseQuery(o(o({}, s), u.copyData(c.query)), e);c = o(o({}, c), { query: f }), p.path = c.path, p.fullPath = c.fullPath || "", p.query = u.deepDecodeQuery(c.query || {}), p.NAVTYPE = a.rewriteMethodToggle[c.type || "reLaunch"];} else {var h = {};if (null != r) h = o(o({}, r), { openType: r.type });else {var v = u.getUniCachePage(t);if (0 === Object.keys(v).length) {var y = l.NAVTYPE,g = n(l, ["NAVTYPE"]),d = "不存在的页面栈，请确保有足够的页面可用，当前 level:" + t;throw e.options.routerErrorEach({ type: 3, msg: d, NAVTYPE: y, level: t, uniActualData: g }, e), new Error(d);}var m = v.options || {};h = o(o({}, v.$page || {}), { query: u.deepDecodeQuery(m), fullPath: decodeURIComponent((v.$page || {}).fullPath || "/" + v.route) }), "app-plus" !== e.options.platform && (h.path = "/" + v.route);}var b = h.openType;p.query = h.query, p.path = h.path, p.fullPath = h.fullPath, p.NAVTYPE = a.rewriteMethodToggle[b || "reLaunch"];}var O = u.routesForMapRoute(e, p.path, ["finallyPathMap", "pathMap"]),P = o(o({}, p), O);return P.query = i.parseQuery(P.query, e), P;}t.lockNavjump = s, t.navjump = f, t.backOptionsBuild = h, t.forceGuardEach = function (e, t, r) {if (void 0 === t && (t = "replaceAll"), void 0 === r && (r = !1), "h5" === e.options.platform) throw new Error("在h5端上使用：forceGuardEach 是无意义的，目前 forceGuardEach 仅支持在非h5端上使用");var o = u.getUniCachePage(0);0 === Object.keys(o).length && e.options.routerErrorEach({ type: 3, NAVTYPE: t, uniActualData: {}, level: 0, msg: "不存在的页面栈，请确保有足够的页面可用，当前 level:0" }, e);var n = o,a = n.route,i = n.options;s({ path: "/" + a, query: u.deepDecodeQuery(i || {}) }, e, t, r);}, t.createRoute = v;}, 845: function _(e, t, r) {"use strict";Object.defineProperty(t, "__esModule", { value: !0 }), t.resetPageHook = t.resetAndCallPageHook = t.proxyPageHook = t.createFullPath = t.createToFrom = void 0;var o = r(282),n = r(789),a = r(890),i = r(99);function u(e) {for (var t = e.proxyHookDeps, r = 0, o = Object.entries(t.hooks); r < o.length; r++) {(0, o[r][1].resetHook)();}}t.createToFrom = function (e, t) {var r = n.getUniCachePage(0);return "[object Array]" === n.getDataType(r) ? n.deepClone(e) : a.createRoute(t);}, t.createFullPath = function (e, t) {if (null == e.fullPath) {var r = i.stringifyQuery(e.query);e.fullPath = e.path + r;}null == t.fullPath && (r = i.stringifyQuery(t.query), t.fullPath = t.path + r);}, t.proxyPageHook = function (e, t, r) {for (var n = t.proxyHookDeps, a = e.$options, i = function i(_i) {var u = o.proxyHookName[_i],l = a[u];if (l) for (var p = function p(o) {if (l[o].toString().includes("UNI-SIMPLE-ROUTER")) return "continue";var a = Object.keys(n.hooks).length + 1,i = function i() {for (var e = [], t = 0; t < arguments.length; t++) {e[t] = arguments[t];}n.resetIndex.push(a), n.options[a] = e;},u = l.splice(o, 1, i)[0];n.hooks[a] = { proxyHook: i, callHook: function callHook(o) {if (t.enterPath.replace(/^\//, "") === o.replace(/^\//, "") || "app" === r) {var i = n.options[a];u.apply(e, i);}}, resetHook: function resetHook() {l.splice(o, 1, u);} };}, c = 0; c < l.length; c++) {p(c);}}, u = 0; u < o.proxyHookName.length; u++) {i(u);}}, t.resetAndCallPageHook = function (e, t, r) {void 0 === r && (r = !0);var o = t.trim().match(/^(\/?[^\?\s]+)(\?[\s\S]*$)?$/);if (null == o) throw new Error("还原hook失败。请检查 【" + t + "】 路径是否正确。");t = o[1];for (var n = e.proxyHookDeps, a = n.resetIndex, i = 0; i < a.length; i++) {var l = a[i];(0, n.hooks[l].callHook)(t);}r && u(e);}, t.resetPageHook = u;}, 99: function _(e, t, r) {"use strict";var o = this && this.__assign || function () {return (o = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);};Object.defineProperty(t, "__esModule", { value: !0 }), t.stringifyQuery = t.parseQuery = t.resolveQuery = t.queryPageToMap = void 0;var n = r(789),a = r(169),i = r(883),u = /[!'()*]/g,l = function l(e) {return "%" + e.charCodeAt(0).toString(16);},p = /%2C/g,c = function c(e) {return encodeURIComponent(e).replace(u, l).replace(p, ",");};t.queryPageToMap = function (e, t) {var r = {},i = "",u = e.success,l = e.fail;if ("[object Object]" === n.getDataType(e)) {var p = e;if (null != p.path) {var c = n.urlToJson(p.path),s = c.path,f = c.query;i = n.routesForMapRoute(t, s, ["finallyPathList", "pathMap"]), r = o(o({}, f), e.query || {}), p.path = s, p.query = r, delete e.params;} else null != p.name ? null == (i = t.routesMap.nameMap[p.name]) ? i = n.getWildcardRule(t, { type: 2, msg: "命名路由为：" + p.name + " 的路由，无法在路由表中找到！", toRule: e }) : (r = e.params || {}, delete e.query) : i = n.getWildcardRule(t, { type: 2, msg: e + " 解析失败，请检测当前路由表下是否有包含。", toRule: e });} else e = n.urlToJson(e), i = n.routesForMapRoute(t, e.path, ["finallyPathList", "pathMap"]), r = e.query;if ("h5" === t.options.platform) {n.getRoutePath(i, t).finallyPath.includes(":") && null == e.name && a.ERRORHOOK[0]({ type: 2, msg: "当有设置 alias或者aliasPath 为动态路由时，不允许使用 path 跳转。请使用 name 跳转！", route: i }, t);var h = e.complete,v = e.success,y = e.fail;if ("[object Function]" === n.getDataType(h)) {var g = function g(e, t) {"[object Function]" === n.getDataType(t) && t.apply(this, e), h.apply(this, e);};u = function u() {for (var e = [], t = 0; t < arguments.length; t++) {e[t] = arguments[t];}g.call(this, e, v);}, l = function l() {for (var e = [], t = 0; t < arguments.length; t++) {e[t] = arguments[t];}g.call(this, e, y);};}}var d = e;return "[object Function]" === n.getDataType(d.success) && (d.success = u), "[object Function]" === n.getDataType(d.fail) && (d.fail = l), { rule: d, route: i, query: r };}, t.resolveQuery = function (e, t) {var r = "query";null != e.params && (r = "params"), null != e.query && (r = "query");var o = n.copyData(e[r] || {}),a = t.options.resolveQuery;if (a) {var u = a(o);"[object Object]" !== n.getDataType(u) ? i.warn("请按格式返回参数： resolveQuery?:(jsonQuery:{[propName: string]: any;})=>{[propName: string]: any;}", t) : e[r] = u;} else {if (!n.assertDeepObject(o)) return e;var l = JSON.stringify(o);e[r] = { query: l };}return e;}, t.parseQuery = function (e, t) {var r = t.options.parseQuery;if (r) e = r(n.copyData(e)), "[object Object]" !== n.getDataType(e) && i.warn("请按格式返回参数： parseQuery?:(jsonQuery:{[propName: string]: any;})=>{[propName: string]: any;}", t);else if (Reflect.get(e, "query")) {var o = Reflect.get(e, "query");if ("string" == typeof o) try {o = JSON.parse(o);} catch (e) {i.warn("尝试解析深度对象失败，按原样输出。" + e, t);}if ("object" == typeof o) return n.deepDecodeQuery(o);}return e;}, t.stringifyQuery = function (e) {var t = e ? Object.keys(e).map(function (t) {var r = e[t];if (void 0 === r) return "";if (null === r) return c(t);if (Array.isArray(r)) {var o = [];return r.forEach(function (e) {void 0 !== e && (null === e ? o.push(c(t)) : o.push(c(t) + "=" + c(e)));}), o.join("&");}return c(t) + "=" + c(r);}).filter(function (e) {return e.length > 0;}).join("&") : null;return t ? "?" + t : "";};}, 314: function _(e, t, r) {"use strict";Object.defineProperty(t, "__esModule", { value: !0 }), t.rewriteMethod = void 0;var o = r(366),n = r(789),a = r(883),i = r(809),u = ["navigateTo", "redirectTo", "reLaunch", "switchTab", "navigateBack"];t.rewriteMethod = function (e) {!1 === e.options.keepUniOriginNav && u.forEach(function (t) {var r = uni[t];uni[t] = function (u, l, p, c) {void 0 === l && (l = !1), l ? i.uniOriginJump(e, r, t, u, p, c) : ("app-plus" === e.options.platform && 0 === Object.keys(e.appMain).length && (e.appMain = { NAVTYPE: t, path: u.url }), function (e, t, r) {if ("app-plus" === r.options.platform) {var i = null;e && (i = e.openType), null != i && "appLaunch" === i && (t = "reLaunch");}if ("reLaunch" === t && '{"url":"/"}' === JSON.stringify(e) && (a.warn("uni-app 原生方法：reLaunch({url:'/'}) 默认被重写啦！你可以使用 this.$Router.replaceAll() 或者 uni.reLaunch({url:'/?xxx=xxx'})", r, !0), t = "navigateBack", e = { from: "backbutton" }), "navigateBack" === t) {var u = 1;null == e && (e = { delta: 1 }), "[object Number]" === n.getDataType(e.delta) && (u = e.delta), r.back(u, e);} else {var l = o.rewriteMethodToggle[t],p = e.url;if (!p.startsWith("/")) {var c = n.resolveAbsolutePath(p, r);p = c, e.url = c;}if ("switchTab" === t) {var s = n.routesForMapRoute(r, p, ["pathMap", "finallyPathList"]),f = n.getRoutePath(s, r).finallyPath;if ("[object Array]" === n.getDataType(f) && a.warn("uni-app 原生方法跳转路径为：" + p + "。此路为是tab页面时，不允许设置 alias 为数组的情况，并且不能为动态路由！当然你可以通过通配符*解决！", r, !0), "*" === f && a.warn("uni-app 原生方法跳转路径为：" + p + "。在路由表中找不到相关路由表！当然你可以通过通配符*解决！", r, !0), "h5" === r.options.platform) {var h = e.success;e.success = function () {for (var t = [], r = 0; r < arguments.length; r++) {t[r] = arguments[r];}null == h || h.apply(null, t), n.timeOut(150).then(function () {var t = e.detail || {};if (Object.keys(t).length > 0 && Reflect.has(t, "index")) {var r = n.getUniCachePage(0);if (0 === Object.keys(r).length) return !1;var o = r,a = o.$options.onTabItemTap;if (a) for (var i = 0; i < a.length; i++) {a[i].call(o, t);}}});};}p = f;}var v = e,y = v.events,g = v.success,d = v.fail,m = v.complete,b = v.animationType,O = { path: p, events: y, success: g, fail: d, complete: m, animationDuration: v.animationDuration, animationType: b };r[l](n.notDeepClearNull(O));}}(u, t, e));};});};}, 963: function _(e, t, r) {"use strict";var o = this && this.__assign || function () {return (o = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);};Object.defineProperty(t, "__esModule", { value: !0 }), t.createRouter = t.RouterMount = void 0;var n = r(282),a = r(789),i = r(662),u = r(460),l = r(890),p = r(314),c = function c() {},s = new Promise(function (e) {return c = e;});t.createRouter = function (e) {var t = a.assertNewOptions(e),r = { options: t, mount: [], Vue: null, proxyHookDeps: n.proxyHookDeps, appMain: {}, enterPath: "", $route: null, $lockStatus: !1, routesMap: {}, lifeCycle: i.registerRouterHooks(n.lifeCycle, t), push: function push(e) {l.lockNavjump(e, r, "push");}, replace: function replace(e) {l.lockNavjump(e, r, "replace");}, replaceAll: function replaceAll(e) {l.lockNavjump(e, r, "replaceAll");}, pushTab: function pushTab(e) {l.lockNavjump(e, r, "pushTab");}, back: function back(e, t) {void 0 === e && (e = 1), "[object Object]" !== a.getDataType(t) ? t = { from: "navigateBack" } : Reflect.has(t, "from") || (t = o(o({}, t), { from: "navigateBack" })), l.lockNavjump(e + "", r, "back", void 0, t);}, forceGuardEach: function forceGuardEach(e, t) {l.forceGuardEach(r, e, t);}, beforeEach: function beforeEach(e) {i.registerEachHooks(r, "beforeHooks", e);}, afterEach: function afterEach(e) {i.registerEachHooks(r, "afterHooks", e);}, install: function install(e) {r.Vue = e, p.rewriteMethod(this), u.initMixins(e, this), Object.defineProperty(e.prototype, "$Router", { get: function get() {var e = r;return Object.defineProperty(this, "$Router", { value: e, writable: !1, configurable: !1, enumerable: !1 }), Object.seal(e);} }), Object.defineProperty(e.prototype, "$Route", { get: function get() {return l.createRoute(r);} }), Object.defineProperty(e.prototype, "$AppReady", { get: function get() {return "h5" === r.options.platform ? Promise.resolve() : s;}, set: function set(e) {!0 === e && c();} });} };return a.def(r, "currentRoute", function () {return l.createRoute(r);}), r.beforeEach(function (e, t, r) {return r();}), r.afterEach(function () {}), r;}, t.RouterMount = function (e, t, r) {if (void 0 === r && (r = "#app"), "[object Array]" !== a.getDataType(t.mount)) throw new Error("挂载路由失败，router.app 应该为数组类型。当前类型：" + typeof t.mount);if (t.mount.push({ app: e, el: r }), "h5" === t.options.platform) {var o = t.$route;o.replace({ path: o.currentRoute.fullPath });}};}, 809: function _(e, t, r) {"use strict";var o = this && this.__assign || function () {return (o = Object.assign || function (e) {for (var t, r = 1, o = arguments.length; r < o; r++) {for (var n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;}).apply(this, arguments);},n = this && this.__awaiter || function (e, t, r, o) {return new (r || (r = Promise))(function (n, a) {function i(e) {try {l(o.next(e));} catch (e) {a(e);}}function u(e) {try {l(o.throw(e));} catch (e) {a(e);}}function l(e) {var t;e.done ? n(e.value) : (t = e.value, t instanceof r ? t : new r(function (e) {e(t);})).then(i, u);}l((o = o.apply(e, t || [])).next());});},a = this && this.__generator || function (e, t) {var r,o,n,a,i = { label: 0, sent: function sent() {if (1 & n[0]) throw n[1];return n[1];}, trys: [], ops: [] };return a = { next: u(0), throw: u(1), return: u(2) }, "function" == typeof Symbol && (a[Symbol.iterator] = function () {return this;}), a;function u(a) {return function (u) {return function (a) {if (r) throw new TypeError("Generator is already executing.");for (; i;) {try {if (r = 1, o && (n = 2 & a[0] ? o.return : a[0] ? o.throw || ((n = o.return) && n.call(o), 0) : o.next) && !(n = n.call(o, a[1])).done) return n;switch (o = 0, n && (a = [2 & a[0], n.value]), a[0]) {case 0:case 1:n = a;break;case 4:return i.label++, { value: a[1], done: !1 };case 5:i.label++, o = a[1], a = [0];continue;case 7:a = i.ops.pop(), i.trys.pop();continue;default:if (!((n = (n = i.trys).length > 0 && n[n.length - 1]) || 6 !== a[0] && 2 !== a[0])) {i = 0;continue;}if (3 === a[0] && (!n || a[1] > n[0] && a[1] < n[3])) {i.label = a[1];break;}if (6 === a[0] && i.label < n[1]) {i.label = n[1], n = a;break;}if (n && i.label < n[2]) {i.label = n[2], i.ops.push(a);break;}n[2] && i.ops.pop(), i.trys.pop();continue;}a = t.call(e, i);} catch (e) {a = [6, e], o = 0;} finally {r = n = 0;}}if (5 & a[0]) throw a[1];return { value: a[0] ? a[1] : void 0, done: !0 };}([a, u]);};}},i = this && this.__rest || function (e, t) {var r = {};for (var o in e) {Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (r[o] = e[o]);}if (null != e && "function" == typeof Object.getOwnPropertySymbols) {var n = 0;for (o = Object.getOwnPropertySymbols(e); n < o.length; n++) {t.indexOf(o[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[n]) && (r[o[n]] = e[o[n]]);}}return r;};Object.defineProperty(t, "__esModule", { value: !0 }), t.formatOriginURLQuery = t.uniOriginJump = void 0;var u = r(99),l = r(789),p = r(282),c = r(845),s = 0,f = "reLaunch";function h(e, t, r) {var n,a = t.url,i = t.path,p = t.query,c = t.animationType,s = t.animationDuration,f = t.events,h = t.success,v = t.fail,y = t.complete,g = t.delta,d = t.animation,m = u.stringifyQuery(p || {}),b = "" === m ? i || a : (i || a) + m,O = {};return "app-plus" === e.options.platform && "navigateBack" !== r && (O = (null === (n = e.options.APP) || void 0 === n ? void 0 : n.animation) || {}, O = o(o({}, O), d || {})), l.notDeepClearNull({ delta: g, url: b, animationType: c || O.animationType, animationDuration: s || O.animationDuration, events: f, success: h, fail: v, complete: y });}t.uniOriginJump = function (e, t, r, u, v, y) {var g = h(e, u, r),d = g.complete,m = i(g, ["complete"]),b = e.options.platform;null != y && !1 === y ? (0 === s && (s++, "h5" !== b && (c.resetAndCallPageHook(e, m.url), e.Vue.prototype.$AppReady = !0)), d && d.apply(null, { msg: "forceGuardEach强制触发并且不执行跳转" }), v && v.apply(null, { msg: "forceGuardEach强制触发并且不执行跳转" })) : (0 === s && ("app-plus" === b ? c.resetAndCallPageHook(e, m.url) : new RegExp(p.mpPlatformReg, "g").test(b) && c.resetAndCallPageHook(e, m.url, !1)), t(o(o({}, m), { from: u.BACKTYPE, complete: function complete() {for (var t, o, i, u, h = [], y = 0; y < arguments.length; y++) {h[y] = arguments[y];}return n(this, void 0, void 0, function () {var n, y, g;return a(this, function (a) {switch (a.label) {case 0:return 0 === s && (s++, "h5" !== b && (new RegExp(p.mpPlatformReg, "g").test(b) && c.resetPageHook(e), e.Vue.prototype.$AppReady = !0, "app-plus" === b && ((n = plus.nativeObj.View.getViewById("router-loadding")) && n.close(), (y = null === (t = e.options.APP) || void 0 === t ? void 0 : t.launchedHook) && y()))), g = 0, new RegExp(p.mpPlatformReg, "g").test(b) ? g = null === (o = e.options.applet) || void 0 === o ? void 0 : o.animationDuration : "app-plus" === b && "navigateBack" === r && "navigateTo" === f && (g = null === (u = null === (i = e.options.APP) || void 0 === i ? void 0 : i.animation) || void 0 === u ? void 0 : u.animationDuration), "navigateTo" !== r && "navigateBack" !== r || 0 === g ? [3, 2] : [4, l.timeOut(g)];case 1:a.sent(), a.label = 2;case 2:return f = r, d && d.apply(null, h), v && v.apply(null, h), [2];}});});} })));}, t.formatOriginURLQuery = h;} }, t = {}, function r(o) {if (t[o]) return t[o].exports;var n = t[o] = { exports: {} };return e[o].call(n.exports, n, n.exports, r), n.exports;}(607);var e, t;});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 14 */
 /*!*********************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/index.js ***!
   \*********************************************************************/
@@ -8098,15 +8715,11 @@ function normalizeComponent (
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 12));
+var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 15));
 
 
 
-var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 13));
-
-
-
-
+var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 16));
 
 
 
@@ -8123,56 +8736,60 @@ var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 
 
 
 
-var _queryParams = _interopRequireDefault(__webpack_require__(/*! ./libs/function/queryParams.js */ 17));
-
-var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/function/route.js */ 18));
-
-var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFormat.js */ 22));
-
-var _timeFrom = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFrom.js */ 23));
-
-var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 24));
-
-var _guid = _interopRequireDefault(__webpack_require__(/*! ./libs/function/guid.js */ 25));
-
-var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/function/color.js */ 26));
-
-var _type2icon = _interopRequireDefault(__webpack_require__(/*! ./libs/function/type2icon.js */ 27));
-
-var _randomArray = _interopRequireDefault(__webpack_require__(/*! ./libs/function/randomArray.js */ 28));
-
-var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepClone.js */ 15));
-
-var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepMerge.js */ 14));
-
-var _addUnit = _interopRequireDefault(__webpack_require__(/*! ./libs/function/addUnit.js */ 29));
-
-
-var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 16));
-
-var _random = _interopRequireDefault(__webpack_require__(/*! ./libs/function/random.js */ 30));
-
-var _trim = _interopRequireDefault(__webpack_require__(/*! ./libs/function/trim.js */ 31));
-
-var _toast = _interopRequireDefault(__webpack_require__(/*! ./libs/function/toast.js */ 32));
-
-var _getParent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/getParent.js */ 33));
-
-var _$parent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/$parent.js */ 34));
 
 
 
-var _sys = __webpack_require__(/*! ./libs/function/sys.js */ 35);
 
-var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 36));
+var _queryParams = _interopRequireDefault(__webpack_require__(/*! ./libs/function/queryParams.js */ 20));
 
-var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 37));
+var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/function/route.js */ 21));
+
+var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFormat.js */ 25));
+
+var _timeFrom = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFrom.js */ 26));
+
+var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 27));
+
+var _guid = _interopRequireDefault(__webpack_require__(/*! ./libs/function/guid.js */ 28));
+
+var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/function/color.js */ 29));
+
+var _type2icon = _interopRequireDefault(__webpack_require__(/*! ./libs/function/type2icon.js */ 30));
+
+var _randomArray = _interopRequireDefault(__webpack_require__(/*! ./libs/function/randomArray.js */ 31));
+
+var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepClone.js */ 18));
+
+var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepMerge.js */ 17));
+
+var _addUnit = _interopRequireDefault(__webpack_require__(/*! ./libs/function/addUnit.js */ 32));
+
+
+var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 19));
+
+var _random = _interopRequireDefault(__webpack_require__(/*! ./libs/function/random.js */ 33));
+
+var _trim = _interopRequireDefault(__webpack_require__(/*! ./libs/function/trim.js */ 34));
+
+var _toast = _interopRequireDefault(__webpack_require__(/*! ./libs/function/toast.js */ 35));
+
+var _getParent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/getParent.js */ 36));
+
+var _$parent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/$parent.js */ 37));
 
 
 
-var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 38));
+var _sys = __webpack_require__(/*! ./libs/function/sys.js */ 38);
 
-var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 39));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入全局mixin
+var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 39));
+
+var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 40));
+
+
+
+var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 41));
+
+var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 42));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入全局mixin
 // 引入关于是否mixin集成小程序分享的配置
 // import wxshare from './libs/mixin/mpShare.js'
 // 全局挂载引入http相关请求拦截插件
@@ -8240,7 +8857,7 @@ var install = function install(Vue) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 12 */
+/* 15 */
 /*!********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/mixin/mixin.js ***!
   \********************************************************************************/
@@ -8313,7 +8930,7 @@ var install = function install(Vue) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 13 */
+/* 16 */
 /*!**********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/request/index.js ***!
   \**********************************************************************************/
@@ -8321,8 +8938,8 @@ var install = function install(Vue) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ../function/deepMerge */ 14));
-var _test = _interopRequireDefault(__webpack_require__(/*! ../function/test */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ../function/deepMerge */ 17));
+var _test = _interopRequireDefault(__webpack_require__(/*! ../function/test */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
 Request = /*#__PURE__*/function () {_createClass(Request, [{ key: "setConfig",
     // 设置全局默认配置
     value: function setConfig(customConfig) {
@@ -8493,7 +9110,7 @@ new Request();exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 14 */
+/* 17 */
 /*!***************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/deepMerge.js ***!
   \***************************************************************************************/
@@ -8501,7 +9118,7 @@ new Request();exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./deepClone */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./deepClone */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 // JS对象深度合并
 function deepMerge() {var target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var source = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -8533,7 +9150,7 @@ function deepMerge() {var target = arguments.length > 0 && arguments[0] !== unde
 deepMerge;exports.default = _default;
 
 /***/ }),
-/* 15 */
+/* 18 */
 /*!***************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/deepClone.js ***!
   \***************************************************************************************/
@@ -8566,7 +9183,7 @@ function deepClone(obj) {
 deepClone;exports.default = _default;
 
 /***/ }),
-/* 16 */
+/* 19 */
 /*!**********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/test.js ***!
   \**********************************************************************************/
@@ -8807,7 +9424,7 @@ function code(value) {var len = arguments.length > 1 && arguments[1] !== undefin
   code: code };exports.default = _default;
 
 /***/ }),
-/* 17 */
+/* 20 */
 /*!*****************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/queryParams.js ***!
   \*****************************************************************************************/
@@ -8875,7 +9492,7 @@ function queryParams() {var data = arguments.length > 0 && arguments[0] !== unde
 queryParams;exports.default = _default;
 
 /***/ }),
-/* 18 */
+/* 21 */
 /*!***********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/route.js ***!
   \***********************************************************************************/
@@ -8883,7 +9500,7 @@ queryParams;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * 并且带有路由拦截功能
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */var
@@ -9008,17 +9625,17 @@ new Router().route;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 19 */
+/* 22 */
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 20);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 23);
 
 /***/ }),
-/* 20 */
+/* 23 */
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -9049,7 +9666,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 21);
+module.exports = __webpack_require__(/*! ./runtime */ 24);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -9065,7 +9682,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 21 */
+/* 24 */
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -9796,7 +10413,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 22 */
+/* 25 */
 /*!****************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/timeFormat.js ***!
   \****************************************************************************************/
@@ -9857,7 +10474,7 @@ function timeFormat() {var dateTime = arguments.length > 0 && arguments[0] !== u
 timeFormat;exports.default = _default;
 
 /***/ }),
-/* 23 */
+/* 26 */
 /*!**************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/timeFrom.js ***!
   \**************************************************************************************/
@@ -9865,7 +10482,7 @@ timeFormat;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/timeFormat.js */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/timeFormat.js */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 /**
                                                                                                                                                                                                                                                                                           * 时间戳转为多久之前
@@ -9914,7 +10531,7 @@ function timeFrom() {var dateTime = arguments.length > 0 && arguments[0] !== und
 timeFrom;exports.default = _default;
 
 /***/ }),
-/* 24 */
+/* 27 */
 /*!*******************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/colorGradient.js ***!
   \*******************************************************************************************/
@@ -10057,7 +10674,7 @@ function colorToRgba(color) {var alpha = arguments.length > 1 && arguments[1] !=
   colorToRgba: colorToRgba };exports.default = _default;
 
 /***/ }),
-/* 25 */
+/* 28 */
 /*!**********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/guid.js ***!
   \**********************************************************************************/
@@ -10108,7 +10725,7 @@ function guid() {var len = arguments.length > 0 && arguments[0] !== undefined ? 
 guid;exports.default = _default;
 
 /***/ }),
-/* 26 */
+/* 29 */
 /*!***********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/color.js ***!
   \***********************************************************************************/
@@ -10155,7 +10772,7 @@ var color = {
 color;exports.default = _default;
 
 /***/ }),
-/* 27 */
+/* 30 */
 /*!***************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/type2icon.js ***!
   \***************************************************************************************/
@@ -10200,7 +10817,7 @@ function type2icon() {var type = arguments.length > 0 && arguments[0] !== undefi
 type2icon;exports.default = _default;
 
 /***/ }),
-/* 28 */
+/* 31 */
 /*!*****************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/randomArray.js ***!
   \*****************************************************************************************/
@@ -10217,7 +10834,7 @@ function randomArray() {var array = arguments.length > 0 && arguments[0] !== und
 randomArray;exports.default = _default;
 
 /***/ }),
-/* 29 */
+/* 32 */
 /*!*************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/addUnit.js ***!
   \*************************************************************************************/
@@ -10225,7 +10842,7 @@ randomArray;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = addUnit;var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = addUnit;var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 // 添加单位，如果有rpx，%，px等单位结尾或者值为auto，直接返回，否则加上rpx单位结尾
 function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'auto';var unit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'rpx';
@@ -10235,7 +10852,7 @@ function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefin
 }
 
 /***/ }),
-/* 30 */
+/* 33 */
 /*!************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/random.js ***!
   \************************************************************************************/
@@ -10255,7 +10872,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 random;exports.default = _default;
 
 /***/ }),
-/* 31 */
+/* 34 */
 /*!**********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/trim.js ***!
   \**********************************************************************************/
@@ -10280,7 +10897,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 trim;exports.default = _default;
 
 /***/ }),
-/* 32 */
+/* 35 */
 /*!***********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/toast.js ***!
   \***********************************************************************************/
@@ -10300,7 +10917,7 @@ toast;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 33 */
+/* 36 */
 /*!***************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/getParent.js ***!
   \***************************************************************************************/
@@ -10357,7 +10974,7 @@ function getParent(name, keys) {
 }
 
 /***/ }),
-/* 34 */
+/* 37 */
 /*!*************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/$parent.js ***!
   \*************************************************************************************/
@@ -10385,7 +11002,7 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 }
 
 /***/ }),
-/* 35 */
+/* 38 */
 /*!*********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/sys.js ***!
   \*********************************************************************************/
@@ -10403,7 +11020,7 @@ function sys() {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 36 */
+/* 39 */
 /*!**************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/debounce.js ***!
   \**************************************************************************************/
@@ -10442,7 +11059,7 @@ function debounce(func) {var wait = arguments.length > 1 && arguments[1] !== und
 debounce;exports.default = _default;
 
 /***/ }),
-/* 37 */
+/* 40 */
 /*!**************************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/function/throttle.js ***!
   \**************************************************************************************/
@@ -10484,7 +11101,7 @@ function throttle(func) {var wait = arguments.length > 1 && arguments[1] !== und
 throttle;exports.default = _default;
 
 /***/ }),
-/* 38 */
+/* 41 */
 /*!**********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/config/config.js ***!
   \**********************************************************************************/
@@ -10507,7 +11124,7 @@ var version = '1.8.3';var _default =
   'warning'] };exports.default = _default;
 
 /***/ }),
-/* 39 */
+/* 42 */
 /*!**********************************************************************************!*\
   !*** C:/公共/StudyHcc/appDemo/appDemo/node_modules/uview-ui/libs/config/zIndex.js ***!
   \**********************************************************************************/

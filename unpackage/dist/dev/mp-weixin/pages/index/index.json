@@ -3,8 +3,8 @@
   "usingComponents": {
     "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
     "u-search": "/node-modules/uview-ui/components/u-search/u-search",
-    "u-grid": "/node-modules/uview-ui/components/u-grid/u-grid",
-    "u-grid-item": "/node-modules/uview-ui/components/u-grid-item/u-grid-item",
+    "uni-grid": "/uni_modules/uni-grid/components/uni-grid/uni-grid",
+    "uni-grid-item": "/uni_modules/uni-grid/components/uni-grid-item/uni-grid-item",
     "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon"
   }
 }
