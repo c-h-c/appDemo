@@ -98,8 +98,14 @@ try {
     xflSelect: function() {
       return __webpack_require__.e(/*! import() | components/xfl-select/xfl-select */ "components/xfl-select/xfl-select").then(__webpack_require__.bind(null, /*! @/components/xfl-select/xfl-select.vue */ 94))
     },
+    uIcon: function() {
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-icon/u-icon */ "node-modules/uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! uview-ui/components/u-icon/u-icon.vue */ 87))
+    },
     uSearch: function() {
       return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-search/u-search */ "node-modules/uview-ui/components/u-search/u-search").then(__webpack_require__.bind(null, /*! uview-ui/components/u-search/u-search.vue */ 66))
+    },
+    uButton: function() {
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-button/u-button */ "node-modules/uview-ui/components/u-button/u-button").then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 110))
     }
   }
 } catch (e) {
@@ -190,6 +196,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
 {
   components: {
     xflSelect: xflSelect },
@@ -199,7 +213,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       keyword: '',
       list: [//要展示的数据
       '苹果',
-      { value: '香蕉', disabled: true },
       '葡萄',
       '芒果',
       '大白菜'] };

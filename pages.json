@@ -6,17 +6,27 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
 			}
 		},
 		{
 			"path": "pages/index/search",
 			"name":"books/search",
 			"meta":{
-				"title": "搜索"
+				"title": "书目检索"
 			},
 			"style": {
-				"navigationBarTitleText": "搜索"
+				"navigationBarTitleText": "书目检索"
+			}
+		},
+		{
+			"path": "pages/index/bound",
+			"name":"books/bound",
+			"meta":{
+				"title": "读者证绑定"
+			},
+			"style": {
+				"navigationBarTitleText": "读者证绑定"
 			}
 		}
 	],

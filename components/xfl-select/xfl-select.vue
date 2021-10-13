@@ -7,7 +7,10 @@
 			@focus="onFocus" @blur="onBlur" @input="onInput" @confirm="$emit('confirm', $event)"
 		>
 		<!-- 显示框 -->
-		<div v-else class="input" :class="{placeholder: selectText === placeholder}" @click="onUpperClick" >{{selectText}}</div>
+		<div v-else class="input" :class="{placeholder: selectText === placeholder}" @click="onUpperClick" >
+			<slot name="pre-icon"></slot>
+			<text>{{selectText}}</text>
+		</div>
 
 		<!-- 右侧的小三角图标 -->
 		<span 

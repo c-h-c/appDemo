@@ -1,7 +1,9 @@
 {
-  "navigationBarTitleText": "搜索",
+  "navigationBarTitleText": "书目检索",
   "usingComponents": {
     "xfl-select": "/components/xfl-select/xfl-select",
-    "u-search": "/node-modules/uview-ui/components/u-search/u-search"
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
   }
 }

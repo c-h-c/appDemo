@@ -19,5 +19,6 @@
 	/*每个页面公共css */
 	page{
 		height: 100%;
+		background-color: #f2f2f2;
 	}
 </style>
