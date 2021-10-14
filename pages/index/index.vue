@@ -40,6 +40,7 @@
 					}
 				],
 				keyword: '',
+				isLogin: true,
 				gridList: [
 					{
 						id: 1,
@@ -97,14 +98,29 @@
 		methods: {
 			goSearch () {
 				// 使用router
-				this.$router.push({name: 'books/search'})
-			},
-			gridIndex (val) {
-				console.log(val.detail.index)
-				// 使用uni.navigateTo
 				uni.navigateTo({
 					url: `pages/index/search`
 				})
+			},
+			gridIndex (val) {
+				let index = val.detail.index
+				if (index === 1) {
+					if (this.isLogin) {
+						uni.navigateTo({
+							url: `pages/index/untie`
+						})
+					} else {
+						uni.navigateTo({
+							url: `pages/index/bound`
+						})						
+					}
+				}
+				if (index === 3) {
+					// 使用uni.navigateTo
+					uni.navigateTo({
+						url: `pages/index/search`
+					})
+				}
 			}
 		}
 	}

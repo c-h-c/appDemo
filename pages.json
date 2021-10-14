@@ -28,6 +28,16 @@
 			"style": {
 				"navigationBarTitleText": "读者证绑定"
 			}
+		},
+		{
+			"path": "pages/index/untie",
+			"name":"books/untie",
+			"meta":{
+				"title": "解除绑定"
+			},
+			"style": {
+				"navigationBarTitleText": "解除绑定"
+			}
 		}
 	],
 	"globalStyle": {
